@@ -1,12 +1,5 @@
-.error {
-    margin: 650px;
-    margin-top: 200px;
-    width: fit-content;
-    height: fit-content;
-    background-color: rgba(135, 199, 255, 0.789);
-    border-radius: 25px;
-}
-
-.error p {
-    padding: 5px;
+iframe {
+    margin-top: 2%;
+    margin-left: 2%;
+    border-radius: 5px;
 }
