@@ -8,14 +8,22 @@ fn App() -> Html {
         move |_| {
             let value = *counter + 1;
             counter.set(value);
+            println!("{}", value);
         }
     };
 
     html! {
-        <div>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
-        </div>
+        <>
+            <div>
+                <p>{"Test"}</p>
+            </div>
+
+            <div>
+                <button {onclick}>{ "+1" }</button>
+                <p>{ *counter }</p>
+            </div>
+
+        </>
     }
 }
 
