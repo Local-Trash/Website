@@ -1,27 +1,29 @@
-<!-- Colors https://coolors.co/acbdba-cddddd-a599b5-2e2f2f-051014--><!DOCTYPE html><html><head>
+<!-- Color Palet https://coolors.co/acbdba-cddddd-a599b5-2e2f2f-051014--><!-- Made By <@local-trash>--><!DOCTYPE html><html><head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Yew App</title>
     <style>
         @font-face {
             font-family: "terminal";
-            src: url(Assets/windows_command_prompt.ttf);
+            src: url("windows_command_prompt.woff2") format("woff2");
+            font-weight: normal;
         }
 
-        body {
-            background-color: #2E2F2F;
+
+        html {
+            font-family: "terminal";
         }
 
-        #mainText {
-            font-family: 'terminal', Arial, Helvetica, sans-serif;
-            color: #CDDDDD;
+        p {
+            font-family: 'terminal';
         }
+
     </style>
-<link rel="preload" href="/website-c18c28a04f001ffe_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/website-c18c28a04f001ffe.js"></head>
+<link rel="preload" href="/website-b98c716a57c57861_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/website-b98c716a57c57861.js"></head>
 
     
-<body><script type="module">import init from '/website-c18c28a04f001ffe.js';init('/website-c18c28a04f001ffe_bg.wasm');</script><script>(function () {
+<body><script type="module">import init from '/website-b98c716a57c57861.js';init('/website-b98c716a57c57861_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
