@@ -3,7 +3,7 @@ use yew::prelude::*;
 #[function_component]
 fn Header() -> Html {
     html! {
-        <div class={classes!("header")}>
+        <div class={classes!("PopOut")}>
             {"test"}
         </div>
     }
@@ -13,7 +13,7 @@ fn Header() -> Html {
 fn App() -> Html {
     html! {
         <>
-            <header />
+            <Header />
         </>
     }
 }
