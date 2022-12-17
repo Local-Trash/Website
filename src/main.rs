@@ -1,7 +1,25 @@
 use yew::prelude::*;
+use yew_router::prelude::*;
+mod pages;
 
-#[function_component]
-fn Header() -> Html {
+#[derive(Clone, Routable, PartialEq)]
+enum Route {
+    #[at("/")]
+    Home,
+    #[not_found]
+    #[at("/404")]
+    Notfound,
+}
+
+fn switch(routes: Route) -> Html {
+    match routes {
+        Route::Home => pages::home::site(),
+        Route::Notfound => pages::notFound::site(),
+    }
+}
+
+#[function_component(Header)]
+fn header() -> Html {
     html! {
         <div class={classes!("PopOut")}>
             {"test"}
@@ -12,9 +30,9 @@ fn Header() -> Html {
 #[function_component]
 fn App() -> Html {
     html! {
-        <>
-            <Header />
-        </>
+        <BrowserRouter>
+            <Switch<Route> render={switch} />
+        </BrowserRouter>
     }
 }
 
