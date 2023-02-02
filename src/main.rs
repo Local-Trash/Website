@@ -4,7 +4,8 @@ mod pages;
 
 // The pages
 #[derive(Clone, Routable, PartialEq)]
-enum Route { 
+enum Route {
+    #[not_found]
     #[at("/")]
     Home,
     #[at("/team")]
@@ -13,9 +14,6 @@ enum Route {
     Games,
     #[at("/blog")]
     Blog,
-    #[not_found]
-    #[at("/404")]
-    Notfound,
 }
 
 // Access to the pages
@@ -25,7 +23,6 @@ fn switch(routes: Route) -> Html {
         Route::Team => pages::team::Site(),
         Route::Games => pages::games::Site(),
         Route::Blog => pages::blog::Site(),
-        Route::Notfound => pages::notFound::Site(),
     }
 }
 

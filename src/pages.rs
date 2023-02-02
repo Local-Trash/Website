@@ -3,6 +3,7 @@ pub mod home {
     use yew::{Html, html, classes};
 
     pub fn Site() -> Html {
+        print!("Main");
         html! {
             <div class={classes!("Home")}>
                 <p class={classes!(vec!["Card"])}>
@@ -34,6 +35,7 @@ pub mod games {
         html! {
             <div class={classes!("Blog")}>
                 <title>{"Test"}</title>
+                <iframe frameborder="0" src="https://itch.io/embed/1661877?border_width=0&amp;dark=true" width="206" height="165"><a href="https://locltrash.itch.io/ghostin-ai">{"Ghostin AI by Loc@lTrash"}</a></iframe>
             </div>
         }
     }
@@ -46,18 +48,6 @@ pub mod blog {
         html! {
             <div class={classes!("blog")}>
 
-            </div>
-        }
-    }
-}
-
-pub mod notFound {
-    use yew::{Html, html, classes};
-
-    pub fn Site() -> Html {
-        html! {
-            <div class={classes!("notFound")}>
-                <p>{"Sorry that page was not found?"}</p>
             </div>
         }
     }
