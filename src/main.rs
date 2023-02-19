@@ -4,18 +4,16 @@ mod pages;
 
 // The pages
 #[derive(Clone, Routable, PartialEq)]
-enum Route { 
+enum Route {
+    #[not_found]
     #[at("/")]
     Home,
     #[at("/team")]
     Team,
-    #[at("/games")]
-    Games,
+    #[at("/software")]
+    Software,
     #[at("/blog")]
     Blog,
-    #[not_found]
-    #[at("/404")]
-    Notfound,
 }
 
 // Access to the pages
@@ -23,9 +21,8 @@ fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => pages::home::Site(),
         Route::Team => pages::team::Site(),
-        Route::Games => pages::games::Site(),
+        Route::Software => pages::software::Site(),
         Route::Blog => pages::blog::Site(),
-        Route::Notfound => pages::notFound::Site(),
     }
 }
 
@@ -34,7 +31,7 @@ fn switch(routes: Route) -> Html {
 fn header() -> Html {
     html! {
         <div class={classes!("Header")}>
-            <p>{"KeyCap Studios "} <a href="/"><img src="logo.svg" alt="logo"/></a></p>
+            <a href="/" id="Home">{"KeyCap Studios "}</a> <a href="/software" id="Software">{"Software "}</a> <a href="/team" id="devs">{"Devs "}</a> <a href="/blog" id="blog">{"Blog "}</a>
         </div>
     }
 }
