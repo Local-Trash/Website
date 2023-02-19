@@ -1,0 +1,139 @@
+$marigold: #d1b187;
+$taggerine: #c77b58;
+$zinnyRust: #ae5d40;
+$pinkRed: #79444a;
+$lospec: #4b3d44;
+$paleLightTan: #ba9158;
+$tan: #927441;
+$matelBrown: #4d4539;
+$hotGreen: #77743b;
+$paleHotGreen: #b3a555;
+$hotWhite: #d2c9a5;
+$calmBlue: #8caba1;
+$deepCalmBlue: #4b726e;
+$cloudLospec: #574852;
+$paleLospec: #847875;
+$whiteLospec: #ab9b8e;
+
+body {
+    background-color: $marigold;
+    color: $lospec;
+    font-weight: 750;
+    font-size: larger;
+}
+
+.Header {
+    $pad: 9vw;
+    $mar: 1vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $taggerine;
+    height: fit-content;
+    padding-bottom: $mar;
+    padding-top: $mar - 0.1vw;
+
+    a {
+        text-decoration: none;
+        color: $lospec;
+        margin-left: $pad;
+        margin-right: $pad;
+        font-weight: 999;
+        font-size: x-large;
+    }
+}
+
+.software {
+    margin-top: 3.5vw;
+}
+
+.team  {
+    margin-top: 3.5vw;
+    color: $paleLightTan;
+    text-align: center;
+}
+
+.blog {
+    margin-top: 10vh;
+    margin-left: 2vw;
+    color: $matelBrown;
+
+    .card {
+        float: left;
+        width: 20vw;
+        background-color: $paleLightTan;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-top: 3vh;
+        border-radius: 2vw;
+
+        header {
+            text-align: center;
+            font-size: larger;
+        }
+
+        p {
+            background-color: $tan;
+            padding-right: 1vw;
+            padding-left: 1vw;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            border-radius: 2vw;
+        }
+    }
+}
+
+.home {
+    margin-top: 4vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    padding-top: 0.5vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-bottom: 0.5vw;
+
+    background-color: $zinnyRust;
+    border-radius: 2vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    width: 25vw;
+    height: 50vh;
+}
+
+#localtrash {
+    margin-top: 9vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    padding-top: 0.5vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-bottom: 0.5vw;
+
+    background-color: $pinkRed;
+    border-radius: 2vw;
+}
+
+#superdoge {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    padding-top: 0.5vw;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-bottom: 0.5vw;
+
+    background-color: $pinkRed;
+    border-radius: 2vw;
+}
