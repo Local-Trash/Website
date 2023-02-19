@@ -3,6 +3,7 @@ pub mod home {
     use yew::{Html, html, classes};
 
     pub fn Site() -> Html {
+        print!("Main");
         html! {
             <>
                 <div class={classes!("home")}>
